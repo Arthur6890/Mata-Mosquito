@@ -94,9 +94,6 @@ function tamanhoAleatorio(){
         case 1:
             return 'mosquito2'
 
-        case 2:
-            return 'mosquito3'
-
     }
 }
 
