@@ -85,7 +85,7 @@ function posicaoRandomica(){
 
 // setando tamanho do mosquito
 function tamanhoAleatorio(){
-    let classe = Math.floor(Math.random() * 3)
+    let classe = Math.floor(Math.random() * 2)
     
     switch(classe){
         case 0:
