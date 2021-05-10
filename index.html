@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mata Mosquito</title>
+        <link rel="icon" href="./img/mosca.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/game_over.css">
+        <script>
+            function iniciarJogo(){
+               let nivel = document.getElementById('nivel').value
+               if(nivel === ''){
+                    alert('Me ajuda ai né amigão. Quer jogar sem nivel poha? Ta me tirando?')
+               }else{
+                    window.location.href = `app.html?${nivel}`
+               }
+               
+            }
+        </script>
+    </head>
+    <body>
+        <audio src="audio/Little Cactus - 8 Bit Song.mp3" autoplay loop id="background-music">
+            <p>Seu navegador nao tem suporte pro audio</p>
+        </audio>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                    <img src="img/game.png" id="game_over_img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="mb-2">
+                            <select name="" id="nivel" class="form-control">
+                                <option value="">-- Selecione o nível --</option>
+                                <option value="normal">Normal</option>
+                                <option value="dificil">Difícil</option>
+                                <option value="impossivel">Morte Súbita</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()" >Jogar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            // tocaMusica()
+        </script>
+    </body>
+</html>

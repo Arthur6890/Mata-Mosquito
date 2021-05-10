@@ -1,0 +1,14 @@
+/* html{
+    cursor: url(../img/Sem\ Título-1.png), auto;
+
+} */
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+#game_over_img{
+    margin-top: 150px;
+}

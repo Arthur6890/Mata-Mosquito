@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mata Mosquito</title>
+    <link rel="icon" href="./img/mosca.png">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/app.js"></script>
+    
+</head>
+<body onresize="ajustaTamanhoPalco()">
+
+    <audio src="audio/Skyrim-8-Bit-Theme.mp3" autoplay loop id="background-music">
+        <p>Seu navegador nao tem suporte pro audio</p>
+    </audio>
+    
+    <div class="painel">
+        <div class="vidas">
+            <img src="img/coracao_cheio.png" alt="" id="v1">
+            <img src="img/coracao_cheio.png" alt="" id="v2">
+            <img src="img/coracao_cheio.png" alt="" id="v3">
+        </div>
+        <div class="cronometro"> Tempo restante: <span id="cronometro"></span></div>
+    </div>
+
+    <script>
+        document.getElementById('cronometro').innerHTML = tempo
+        let criaMosquito = setInterval(function (){
+            posicaoRandomica()
+        }, criaMosquitoTempo)
+    </script>
+</body>
+</html>
